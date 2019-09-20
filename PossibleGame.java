@@ -95,12 +95,21 @@ public class PossibleGame {
                     // Survive
                     if (userChoice4.equals(result4B)) {
                         System.out.println(thickBarrier);
-                        System.out.print("You choose to go");
+                        System.out.print("You choose to go to the right. As you walk down the narrow, dim hallway, you hear what can only be described as a roar from some sort of creature. It didn't sound like it came from earth. At this point you dash for the corner and turn around it without looking back to see the source of the roar, around the corner there is a hallway that goes on for what seems to be a mile...");
+                        System.out.print("You spot a door on the left hand side of the hallway and make a mad dash to it. As you reach the doorway you throw yourself inside without thinking in fear of whatever creature made that noise. As you slam the door behind you, you hear giant thuds go flying by the door followed by another hideous roar coming from where the footsteps were heading.");
+                        System.out.print("Finally, you decide to turn around to see you are in what looks to be a small cafeteria/break room. Within you see the classic table setup and where a worker would serve food. At the sight of all of this and seeing nobody around, you decide to grab a bite to eat. You did not feel huungry at first but as soon as you went behind the large double doors to behind the serving station, all you can see are shelves of various packages of meals.");
+                        System.out.print("The only way you can tell these are still meals is by the medium sign labeled \"Meals Ready To Eat.\" As you search the isles you find two of what seem to be the quality of them all. They don't have specific names but only what seems to be a ID number. These two packages have the nicest packaging and are considerably larger than the others. You have to make a choice of which one to have. Do you wish to choose Package_A or Package_B?");
+                        System.out.println(thickBarrier);
+                        System.out.println(emptyLine);
+                        userChoice5 = keyboard.next();
+                        System.out.println(emptyLine);
                     }
 
                     // Fail
                     if (userChoice4.equals(result4A)) {
-                        
+                        System.out.println(thickBarrier);
+                        // Finish this line.
+                        System.out.print("You choose to go to the left. As you walk down the hallway the air around you suddenly gets hotter... You consider turning around but a sudden blast of air knocks you on your back, knocking the wind out of you. As you struggle to regain your breath and find the source, large thuds begin down the hallyway in your direction. Panicking you get up but you still struggle to breathe. Ahead of you... Is something you can't even begin to describe");
                     }
                 }
 
