@@ -13,13 +13,13 @@ public class PossibleGame {
         // Construction Variables
         String thickBarrier, dottedBarrier, failed, emptyLine;
         // User Choices (They recieve input from scanner.)
-        String userChoice1, userChoice2, userChoice3, userChoice4;
+        String userChoice1, userChoice2, userChoice3, userChoice4, userChoice5;
         // Options that tell the results.
-        String result1A, result1B, result1C, result2A, result2B, result3A, result3B, result4A, result4B;
+        String result1A, result1B, result1C, result2A, result2B, result3A, result3B, result4A, result4B, result5A, result5B;
 
         // Construction Variables
 
-        thickBarrier = ("----------------------------------------------");
+        thickBarrier = ("---------------------------------------------------------------------------");
         dottedBarrier = ("- - - - - - - - - - - - - - - - - - - - - - - -");
         failed = ("- You Died -");
         emptyLine = ("                           ");
@@ -38,6 +38,9 @@ public class PossibleGame {
 
         result4A = ("Left");
         result4B = ("Right");
+
+        result5A = ("Package_A");
+        result5B = ("Package_B");
         
         // Actual code
 
@@ -72,7 +75,7 @@ public class PossibleGame {
                 System.out.print("You follow the instructions and return to the other room to open the door, just before you open it you hear a explosion behind the door, quickly followed by heavy footsteps, yelling, and gun shots. All of this only lasts for about 10 seconds before the heavy footsteps get distant. After this you run back to the radio to still hear the same repeating instructions.");
                 System.out.print("You decide to wait a while longer before returning to the other room and to the door. Finally you gain the courage to open the door as the instructions had insisted. Within you see what looks like a warzone. After the sounds coming from the room earlier you are not very suprised but you are indeed scared.");
                 System.out.print("Within the room there is a doorway wich looks to be leading out into a long hallway and a large iron door in the center of the room along with what seems to be two dead soldiers. They are both in different uniform and are very well equipped but you fail to figure out who they are or where they came from.");
-                System.out.println("You notice in the corner of the room is a metal hatch which is locked by one of the turning wheels. Ignoring this but keeping it in mind, you decide to grab one of the soldiers guns but it is like nothing you have ever seen before. It is lightweight and glowing?? You decide to just put the gun over your shoulder with the strap and continue on but first you must choose where you wish to go.");
+                System.out.print("You notice in the corner of the room is a metal hatch which is locked by one of the turning wheels. Ignoring this but keeping it in mind, you decide to grab one of the soldiers guns but it is like nothing you have ever seen before. It is lightweight and glowing?? You decide to just put the gun over your shoulder with the strap and continue on but first you must choose where you wish to go.");
                 System.out.println("You have two choices from here, you can choose the Hallway in a attempt to follow the soldiers or the Hatch.");
                 System.out.println(thickBarrier);
                 System.out.println(emptyLine);
@@ -98,18 +101,28 @@ public class PossibleGame {
                         System.out.print("You choose to go to the right. As you walk down the narrow, dim hallway, you hear what can only be described as a roar from some sort of creature. It didn't sound like it came from earth. At this point you dash for the corner and turn around it without looking back to see the source of the roar, around the corner there is a hallway that goes on for what seems to be a mile...");
                         System.out.print("You spot a door on the left hand side of the hallway and make a mad dash to it. As you reach the doorway you throw yourself inside without thinking in fear of whatever creature made that noise. As you slam the door behind you, you hear giant thuds go flying by the door followed by another hideous roar coming from where the footsteps were heading.");
                         System.out.print("Finally, you decide to turn around to see you are in what looks to be a small cafeteria/break room. Within you see the classic table setup and where a worker would serve food. At the sight of all of this and seeing nobody around, you decide to grab a bite to eat. You did not feel huungry at first but as soon as you went behind the large double doors to behind the serving station, all you can see are shelves of various packages of meals.");
-                        System.out.print("The only way you can tell these are still meals is by the medium sign labeled \"Meals Ready To Eat.\" As you search the isles you find two of what seem to be the quality of them all. They don't have specific names but only what seems to be a ID number. These two packages have the nicest packaging and are considerably larger than the others. You have to make a choice of which one to have. Do you wish to choose Package_A or Package_B?");
+                        System.out.println("The only way you can tell these are still meals is by the medium sign labeled \"Meals Ready To Eat.\" As you search the isles you find two of what seem to be the quality of them all. They don't have specific names but only what seems to be a ID number. These two packages have the nicest packaging and are considerably larger than the others. You have to make a choice of which one to have. Do you wish to choose Package_A or Package_B?");
                         System.out.println(thickBarrier);
                         System.out.println(emptyLine);
                         userChoice5 = keyboard.next();
                         System.out.println(emptyLine);
+
+                        // Survive
+                        if (userChoice5.equals(result5A)) {
+                            System.out.println(thickBarrier);
+                            System.out.print("WIP");
+                        }
+
+                        // Fail
+                        if (userChoice5.equals(result5B)) {
+                            System.out.println(thickBarrier);
+                        }
                     }
 
                     // Fail
                     if (userChoice4.equals(result4A)) {
                         System.out.println(thickBarrier);
-                        // Finish this line.
-                        System.out.print("You choose to go to the left. As you walk down the hallway the air around you suddenly gets hotter... You consider turning around but a sudden blast of air knocks you on your back, knocking the wind out of you. As you struggle to regain your breath and find the source, large thuds begin down the hallyway in your direction. Panicking you get up but you still struggle to breathe. Ahead of you... Is something you can't even begin to describe");
+                        System.out.print("You choose to go to the left. As you walk down the hallway the air around you suddenly gets hotter... You consider turning around but a sudden blast of air knocks you on your back, knocking the wind out of you. As you struggle to regain your breath and find the source, large thuds begin down the hallyway in your direction. Panicking you get up but you still struggle to breathe. Ahead of you... Its something best described as a giant lizard... Its eyes glowed a soft green as it started to run towards you, but you stand still, unable to move due to a mixture of shock and fear. You stare into the monster's eyes as it charges you. The last thing you see is the monster opening its mouth and closing it around your torso. As you feel your insides get crushed and your ribs snap, your sight turns into darkness. You Died.");
                     }
                 }
 
