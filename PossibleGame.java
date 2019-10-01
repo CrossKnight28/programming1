@@ -85,8 +85,7 @@ public class PossibleGame {
                 // Survive
                 if (userChoice3.equals(result3A)) {
                     System.out.println(thickBarrier);
-                    System.out.print("You decide to go with the hatch. Even if you did attempt to follow the soldiers who" +
-                                        "knows if they are friendly or not. You walk over and twist the lock on the hatch and pull it open with the last bit of strength inside you. You peer down and see a dimmly lit ladder going for about 20 feet down.");
+                    System.out.print("You decide to go with the hatch. Even if you did attempt to follow the soldiers who knows if they are friendly or not. You walk over and twist the lock on the hatch and pull it open with the last bit of strength inside you. You peer down and see a dimmly lit ladder going for about 20 feet down.");
                     System.out.print("You climb down the ladder into what looks to be a maintence hall. Although it smells terrible you know you must push on in fear of being caught by someone who wouldn't appreciate what he is currently doing.");
                     System.out.print("There are two directions to go from here, both leading to a corner that appears to continue the hall.");
                     System.out.println("You need to decide which direction to go. Do you choose Left or Right?");
@@ -98,10 +97,10 @@ public class PossibleGame {
                     // Survive
                     if (userChoice4.equals(result4B)) {
                         System.out.println(thickBarrier);
-                        System.out.print("You choose to go to the right. As you walk down the narrow, dim hallway, you hear what can only be described as a roar from some sort of creature. It didn't sound like it came from earth. At this point you dash for the corner and turn around it without looking back to see the source of the roar, around the corner there is a hallway that goes on for what seems to be a mile...");
+                        System.out.print("You choose to go to the right. As you walk down the narrow, dim hallway, you hear what can only be described as a roar from some sort of creature. It didn't sound like it came from earth. This is when you hear the large footsteps coming towards you at light speeds. At this point you dash for the corner and turn around it without looking back to see the source of the roar, around the corner there is a hallway that goes on for what seems to be a mile...");
                         System.out.print("You spot a door on the left hand side of the hallway and make a mad dash to it. As you reach the doorway you throw yourself inside without thinking in fear of whatever creature made that noise. As you slam the door behind you, you hear giant thuds go flying by the door followed by another hideous roar coming from where the footsteps were heading.");
-                        System.out.print("Finally, you decide to turn around to see you are in what looks to be a small cafeteria/break room. Within you see the classic table setup and where a worker would serve food. At the sight of all of this and seeing nobody around, you decide to grab a bite to eat. You did not feel huungry at first but as soon as you went behind the large double doors to behind the serving station, all you can see are shelves of various packages of meals.");
-                        System.out.println("The only way you can tell these are still meals is by the medium sign labeled \"Meals Ready To Eat.\" As you search the isles you find two of what seem to be the quality of them all. They don't have specific names but only what seems to be a ID number. These two packages have the nicest packaging and are considerably larger than the others. You have to make a choice of which one to have. Do you wish to choose Package_A or Package_B?");
+                        System.out.print("Finally, you decide to turn around to see you are in what looks to be a small cafeteria/break room. Within you see the classic table setup and where a worker would serve food. At the sight of all of this and seeing nobody around along with no new signs of the creature, you decide to grab a bite to eat. You did not feel hungry at first but as soon as you went behind the large double doors to behind the serving station, all you can see are shelves of various packages of meals.");
+                        System.out.println("The only way you can tell these are still meals is by the medium sized sign labeled \"Meals Ready To Eat.\" As you search the isles you find two of what seem to be the quality of them all. They don't have specific names but only what seems to be a ID number. These two packages have the nicest packaging and are considerably larger than the others. You have to make a choice of which one to have. Do you wish to choose Package_A or Package_B?");
                         System.out.println(thickBarrier);
                         System.out.println(emptyLine);
                         userChoice5 = keyboard.next();
@@ -110,12 +109,15 @@ public class PossibleGame {
                         // Survive
                         if (userChoice5.equals(result5A)) {
                             System.out.println(thickBarrier);
-                            System.out.print("WIP");
+                            System.out.println("You choose Package_A. You set Package_B back where you found it and take Package_A back to the main room with the tables and benches. You go in and quickly scan the room again to be safe. Finally sitting down and relaxing you tear open the package only to find what looks to be a squashed salad and a tiny sandwich inside. ");
+                            System.out.println(thickBarrier);
+                            System.out.println(emptyLine);
                         }
 
                         // Fail
                         if (userChoice5.equals(result5B)) {
                             System.out.println(thickBarrier);
+                            System.out.print("WIP - You Died.");
                         }
                     }
 
